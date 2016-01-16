@@ -1,0 +1,14 @@
+{
+  "name": "rocinante",
+  "version": "0.0.0",
+  "description": "AlpineIO WordPress base theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "git+https://github.com/twbs/bootstrap.git#v4-dev"
+  }
+}
