@@ -2,28 +2,9 @@
     "name": "alpineio/rocinante",
     "description": "AlpineIO WordPress base theme",
     "type": "wordpress-theme",
-    "minimum-stability": "dev",
-    "repositories": [
-         {
-            "type": "package",
-            "package": {
-                "name": "automattic/_s",
-                "version": "1.0.0",
-                "dist": {
-                  "url": "https://github.com/Automattic/_s/archive/master.zip",
-                  "type": "zip"
-                },
-                "source": {
-                    "url": "git://github.com/Automattic/_s.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
-        }
-    ],
     "require": {
         "php": ">=5.5.9",
-        "automattic/_s": "^1.0",
+        "alpineio/underscores": "@dev",
         "symfony/console": "^3.0"
     },
     "require-dev": {

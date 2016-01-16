@@ -43,13 +43,17 @@ class RenameCommand extends Command
 		$output->writeln(sprintf('Prefixed Handles: %s', $prefixed_handles));
 
 		$source_dir = dirname(ROCINANTE_COMPOSER_INSTALL) . '/automattic/_s';
+		$target_dir = './build';
+
 		$files = scandir($source_dir);
 		var_dump($files);
+
 		foreach ($files as $file ) {
 			$pathname = $source_dir . DIRECTORY_SEPARATOR . $file;
-			if ( ! is_dir( $pathname )) {
+			if ( ! is_dir( $pathname ) ) {
 				var_dump($pathname);
 				$file_contents = file_get_contents($pathname);
+
 			}
 		}
 	}
